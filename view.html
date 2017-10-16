@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Онлайн Калькулятор</title>
+    <script type="text/javascript" src="./js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+</head>
+<body>
+    <b><p>Расчет панелей</p></b>
+    <p>Размер дома
+    <input type="text" size="2" id = "count_panels" onkeyup="validate(this)"> м2 </p>
+     <p>
+         Количество панелей <span id="result_count_panels">0</span> шт.
+         Стоимость <span id="result_cost_panels">0</span> руб.
+         Стоимость защитного покрытия <span id="result_protective_covering">0</span> руб.
+         Вес <span id="result_weight_pc">0</span> кг.
+     </p>
+    <b><p>Размер окон</p></b>
+    <div class="window_size">
+        <p name="1">
+            Ширина <input type="text" size="2" id = "width_window1" onkeyup="validate(this)"> см,
+            Высота <input type="text" size="2" id = "height_window1" onkeyup="validate(this)"> см,
+            Количество <input type="text" size="2" id = "number_window1" onkeyup="validate(this)"> шт
+            <input type="submit" size="2" id="add_window_size" value="Добавить новый размер окна">
+            <input type="submit" size="2" id="delete_window_size" value="Удалить последний размер окна">
+        </p>
+
+    </div>
+    <p>
+        Количество метров <span id="result_footage">0</span> м/п
+        Стоимость  <span id="result_cost_window">0</span> руб.
+    </p>
+
+    <b><p>Расчет углов дома</p></b>
+    <div class="corners_count">
+        <p>
+            Количество углов дома <input type="text" size="2" id = "count_corners" onkeyup="validate(this)"> шт
+            Высота угла <input type="text" size="2" id = "height_corners" onkeyup="validate(this)"> м
+        </p>
+        <p>
+            Количество метров <span id="result_footage_corners">0</span> м/п
+            Стоимость  <span id="result_cost_corners">0</span> руб.
+        </p>
+    </div>
+    <div class="total">
+       <b><p>Общая стоимость <span id="total_cost">0</span> руб.</p></b>
+    </div>
+</body>
+
+
+</html>
